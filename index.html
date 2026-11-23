@@ -3,29 +3,58 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Wendly</title>
-<meta name="description" content="Suas tarefas de verdade movem um explorador pelo mapa.">
+<title>Wendly: lista de tarefas com um explorador</title>
+<meta name="description" content="Sua lista de tarefas agora tem um explorador. Cada tarefa feita enche a mochila, ele parte em expedição e volta com moedas, baús e lembranças.">
+<meta property="og:title" content="Wendly: lista de tarefas com um explorador">
+<meta property="og:description" content="Sua lista de tarefas agora tem um explorador. O que ele traz hoje?">
+<meta property="og:image" content="https://wendly.floaterlabs.com/destaque.png">
+<meta property="og:url" content="https://wendly.floaterlabs.com/">
+<link rel="icon" href="icone.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#f6f7f4;--fg:#1b2422;--muted:#5b6b67;--accent:#2f6f5e}
-@media (prefers-color-scheme:dark){:root{--bg:#141c1b;--fg:#e9efec;--muted:#9fb0ab;--accent:#8fd4b4}}
+:root{--bg:#f6f7f4;--fg:#1b2422;--muted:#5b6b67;--accent:#2f6f5e;--panel:#e9eeea;--btn:#1b2422;--btnfg:#f6f7f4}
+@media (prefers-color-scheme:dark){:root{--bg:#141c1b;--fg:#e9efec;--muted:#9fb0ab;--accent:#8fd4b4;--panel:#1b2624;--btn:#e9efec;--btnfg:#141c1b}}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--fg);font-family:Nunito,system-ui,-apple-system,"Segoe UI",sans-serif;font-size:18px;line-height:1.6}
-main{max-width:640px;margin:0 auto;padding:72px 16px}
-h1{font-size:44px;font-weight:900;margin:0 0 8px}
+main{max-width:640px;margin:0 auto;padding:56px 16px 72px}
+.hero{width:100%;height:auto;border-radius:20px;display:block;margin:0 0 32px}
+h1{font-size:40px;font-weight:900;margin:0 0 8px;line-height:1.15}
+h2{font-size:22px;font-weight:900;margin:40px 0 12px}
 p{margin:0 0 16px}
 .lead{font-size:21px;color:var(--muted)}
+ol{margin:0 0 16px;padding-left:24px}
+li{margin:0 0 6px}
 a{color:var(--accent);font-weight:700}
-nav{margin-top:40px;display:flex;gap:20px;flex-wrap:wrap}
+.play{display:inline-block;margin:8px 0 6px;padding:14px 26px;border-radius:14px;background:var(--btn);color:var(--btnfg);text-decoration:none;font-weight:900;font-size:19px}
+.note{font-size:15px;color:var(--muted);margin:0 0 8px}
+.iphone{margin-top:32px;padding:18px 20px;border-radius:16px;background:var(--panel)}
+.iphone p{margin:0;font-size:16px}
+nav{margin-top:48px;display:flex;gap:20px;flex-wrap:wrap;font-size:16px}
 </style>
 </head>
 <body>
 <main>
-<h1>Wendly</h1>
-<p class="lead">Suas tarefas de verdade enchem a mochila de um explorador. Você aperta Partir, ele sai em expedição pelo mapa e volta horas depois com o que encontrou.</p>
-<p>Um app de tarefas que dá vontade de abrir o dia todo.</p>
+<img class="hero" src="destaque.png" alt="O explorador do Wendly acampado numa ilha flutuante, à noite, com um baú numa ilha ao lado" width="1024" height="500">
+<h1>Sua lista de tarefas agora tem um explorador</h1>
+<p class="lead">Cada tarefa feita enche a mochila dele. Você toca em Partir, ele sai em expedição pelo mapa e volta horas depois com moedas, baús e, às vezes, uma lembrança rara.</p>
+<a class="play" href="https://play.google.com/store/apps/details?id=com.floaterlabs.wendly">Baixar na Google Play</a>
+<p class="note">Por enquanto, só para Android. Sem cadastro, sem anúncios e sem compras.</p>
+
+<h2>Como funciona</h2>
+<ol>
+<li>Anote o que precisa fazer hoje.</li>
+<li>Cada tarefa concluída vai para a mochila do explorador.</li>
+<li>Toque em Partir: ele sai em expedição pelo mapa de ilhas.</li>
+<li>Horas depois, ele volta com o que encontrou.</li>
+</ol>
+<p>Enquanto você vive o seu dia, o mundo do Wendly anda sozinho. Abrir o app é ver o que chegou.</p>
+
+<div class="iphone">
+<p><strong>Tem iPhone?</strong> O Wendly ainda não está na App Store. <a href="https://www.instagram.com/floaterlabs/">Entre na lista de espera no Instagram</a> e avisamos quando chegar.</p>
+</div>
+
 <nav>
 <a href="privacidade.html">Política de privacidade</a>
 <a href="mailto:contact.wendly@gmail.com">Contato</a>
