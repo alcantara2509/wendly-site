@@ -32,7 +32,7 @@ footer{margin-top:48px;color:var(--muted);font-size:15px;border-top:1px solid va
 <p class="meta">Última atualização: 24 de novembro de 2026</p>
 
 <div class="box">
-<strong>Em resumo:</strong> suas tarefas, sua agenda e seu progresso ficam no seu celular. O Wendly não pede nome, e-mail nem telefone. Para melhorar o app, ele envia contagens de uso e relatórios de erro ligados a um código anônimo, nunca o conteúdo das suas tarefas. Você pode desligar esse envio em Ajustes.
+<strong>Em resumo:</strong> suas tarefas, sua agenda e seu progresso ficam no seu celular. Se você conectar o Outlook, os eventos vêm direto da Microsoft para o celular, sem passar pelo nosso servidor. O Wendly não pede nome, e-mail nem telefone. Para melhorar o app, ele envia contagens de uso e relatórios de erro ligados a um código anônimo, nunca o conteúdo das suas tarefas. Você pode desligar esse envio em Ajustes.
 </div>
 
 <h2>Quem é o responsável</h2>
@@ -52,7 +52,7 @@ footer{margin-top:48px;color:var(--muted);font-size:15px;border-top:1px solid va
 <li><strong>Relatórios de erro:</strong> quando algo dá errado no app, a mensagem do erro e o trecho do código onde ele aconteceu, já sem textos entre aspas, links, e-mails e números longos, e se o app precisou ser reiniciado.</li>
 <li><strong>Junto de cada envio:</strong> a versão do app, o sistema (Android ou iOS) e a versão do sistema.</li>
 </ul>
-<p><strong>Nunca são enviados:</strong> o texto das tarefas, nomes de checklists, itens, prêmios ou roupas, dados da agenda, suas tarefas ou senha do Todoist (a chave de acesso só passa pelo servidor na conexão, como explicado em Todoist), nome, e-mail, telefone, localização, contatos, nem o identificador de publicidade do aparelho.</p>
+<p><strong>Nunca são enviados:</strong> o texto das tarefas, nomes de checklists, itens, prêmios ou roupas, dados da agenda (do celular ou do Outlook), a chave de acesso ou a senha da sua conta Microsoft, suas tarefas ou senha do Todoist (a chave de acesso só passa pelo servidor na conexão, como explicado em Todoist), nome, e-mail, telefone, localização, contatos, nem o identificador de publicidade do aparelho.</p>
 <p>Como em qualquer acesso à internet, o provedor do servidor registra por pouco tempo dados técnicos da conexão, como o endereço IP, para segurança e funcionamento.</p>
 
 <h2>Para que usamos</h2>
@@ -64,6 +64,10 @@ footer{margin-top:48px;color:var(--muted);font-size:15px;border-top:1px solid va
 <h2>Todoist</h2>
 <p>Se você escolher conectar o Todoist, você entra na sua conta no site do Todoist e autoriza o Wendly. Para concluir a autorização, o código que o Todoist devolve passa pelo nosso servidor, que o troca pela chave de acesso usando o segredo do app (que não pode ficar no celular) e entrega a chave ao seu celular. O mesmo acontece quando a chave é renovada, o que acontece a cada hora de uso. O servidor não guarda nem registra o código nem a chave e não os liga ao seu código anônimo.</p>
 <p>A chave fica guardada na área segura do celular, e as suas tarefas vão direto do celular para o Todoist, sem passar pelo nosso servidor. Desconectar apaga a chave do celular; para tirar o Wendly da lista de apps conectados da sua conta, remova-o nas configurações do Todoist. Se você preferir colar um token da API do Todoist, nada disso passa pelo nosso servidor. O tratamento dos seus dados no Todoist segue a política de privacidade do próprio Todoist.</p>
+
+<h2>Outlook</h2>
+<p>Se você escolher conectar o Outlook, você entra na sua conta Microsoft no site da Microsoft e autoriza o Wendly a ler a sua agenda. Tudo acontece entre o seu celular e a Microsoft: a autorização, a chave de acesso e os eventos não passam pelo nosso servidor. O Wendly só lê: não cria, não muda e não apaga eventos.</p>
+<p>A chave de acesso fica guardada na área segura do celular e é renovada direto com a Microsoft. Os eventos são mostrados só no aparelho. Desconectar apaga a chave do celular; para tirar o Wendly da sua conta, remova-o nas configurações da conta Microsoft (em conta de empresa ou escola, com o suporte de TI). O tratamento dos seus dados na Microsoft segue a política de privacidade da própria Microsoft.</p>
 
 <h2>Com quem compartilhamos</h2>
 <ul>
