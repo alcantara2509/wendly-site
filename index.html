@@ -61,5 +61,10 @@ nav{margin-top:48px;display:flex;gap:20px;flex-wrap:wrap;font-size:16px}
 <a href="mailto:contact.wendly@gmail.com">Contato</a>
 </nav>
 </main>
+<script>
+const query=new URLSearchParams(location.search);
+const utm=['utm_source','utm_medium','utm_campaign','utm_content','utm_term'].filter(k=>query.get(k)).map(k=>k+'='+encodeURIComponent(query.get(k))).join('&');
+if(utm){const play=document.querySelector('a.play');play.href+='&referrer='+encodeURIComponent(utm)}
+</script>
 </body>
 </html>
