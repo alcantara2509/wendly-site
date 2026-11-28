@@ -1,11 +1,12 @@
 [
   {
-    "relation": ["delegate_permission/common.handle_all_urls"],
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
     "target": {
       "namespace": "android_app",
       "package_name": "com.floaterlabs.wendly",
       "sha256_cert_fingerprints": [
-        "COLE_AQUI_O_SHA256_DA_CHAVE_DA_PLAY_E3:9B:83:7F",
         "83:B6:77:09:7A:D0:FA:5A:30:2B:2F:82:75:B1:B0:AD:32:21:28:93:0B:7D:26:42:71:07:88:A8:F0:98:76:9F"
       ]
     }
